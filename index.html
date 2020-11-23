@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="./devicon-master/devicon-colors.css">
   <title>Portfolio</title>
 </head>
 <body>
@@ -38,11 +40,10 @@
           </div>
         </div>
       </div>
-      <hr>
+      
     <main>
 
       <section class="work-section" id="work">
-        <!-- <div> -->
           
             <!-- Slider main container -->
           <div class="swiper-container">
@@ -64,12 +65,31 @@
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
           </div>
-
-        <!-- </div> -->
      
        </section>
 
-       <section id="technologies"></section>
+       <section class="techno-section" id="technologies">
+         <h2 class="techs-heading">Technologies</h2>
+        <div class="icons-box">
+          <img src="images/php.png"class="techs" alt="php">
+          <img src="images/trio.png" alt="html css js" class="trio">
+          <img src="images/reactjs.png" alt="reactjs" class="techs">
+          <img src="images/mysql.png" alt="mysql" class="techs">
+          <img src="images/git.png" alt="git" class="techs">
+          <!-- <div class="svgs php"></div>
+          <div class="svgs html"></div>
+          <div class="svgs css3"></div>
+          <div class="svgs js"></div>
+          <div class="svgs git"></div>
+          <div class="svgs sass"></div>
+          <div class="svgs clang"></div>
+          <div class="svgs sass"></div>
+          <div class="svgs react"></div>
+          <div class="svgs sass"></div>
+          <div class="svgs mongo"></div>
+          <div class="svgs webpack"></div> -->
+         </div>
+       </section>
 
       <section id="contact"></section>
 
@@ -124,12 +144,16 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script> var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    
+    autoplay : {
+      delay:2500,
+      disableOnInteraction: false
+    },
     loop: true,
 
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true
     },
 
     // Navigation arrows
