@@ -12,30 +12,6 @@ body {
   padding: 0;
   background-color: #222;
 }
-@media( max-width: 768px){
- 
-}
-
-@media( max-width: 482px){
-  /* html {
-    font-size: calc( 16px + 6 * ( (100vh - 320px) / 680))
-  } */
-
-  .logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    color: whitesmoke;
-    padding: 10px;
-    font-size: 1rem;
-    background-color: #19b5fe;
-    text-align: center;
-    border-radius: 50%;
-  }
-  .nav-ul li a {
-    display: none;
-    
-  }
-}
 
 nav {
   display: flex;
@@ -54,28 +30,29 @@ nav {
 }
 ul {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
 .nav-ul li{
+  flex-grow: 1;
   color: whitesmoke;
-  margin: 0 5rem;
+  margin: 0 3rem;
   list-style: none;
 }
 a {
   font-size: 1.3rem;
   text-decoration: none;
   color: whitesmoke;
-  /* text-transform: uppercase; */
   font-family: monospace;
   font-weight: 700;
   letter-spacing: 1.5px;
-  padding: 15px;
 }
 .nav-ul li a:hover {
   transition: all .3s ease-in-out;
   border-bottom: 1.5px solid whitesmoke;
 }
+/*  Hero section */
 .hero {
   color: aliceblue;
   text-align: center;
@@ -83,7 +60,7 @@ a {
 }
 .hero-heading {
   font-family: sans-serif;
-  font-size: 4rem;
+  font-size: 7vh;
   margin-bottom: 1.5rem;
 }
 .hero p {
@@ -94,80 +71,39 @@ a {
 .devices-box {
   width: 65%;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  margin: 5rem auto;
+  flex-shrink: 1;
+  margin: 1rem auto;
 }
-.device {
-  background: white;
-  box-shadow: 0 0 4px grey,
-  inset 0 0 3px grey;
+.screens {
+   position: relative;
+   width: 60vw;
+   height: 45vw;
+   margin: 2rem auto;
 }
-.cellphone {
-  width: 5rem;
-  height: 10rem;
-  /* border: 1.5px solid white; */
-  border-radius: 4px;
-}
-.screen {
-  display: block;
-  width: 4.5rem;
-  height: 9rem;
-  position: relative;
-  background-color: #000;
-  margin: 4px auto;
-}
-.desktop {
-  width: 25rem;
-  height: 18rem;
-  border-radius: 4px;
-}
-.pc-screen {
-  display: block;
-  width: 24rem;
-  height: 16rem;
-  background: #000;
-  margin: 8px auto;
-}
-.tablet {
-  width: 15rem;
-  height: 10rem;
-  /* border: 1.5px solid white; */
-  border-radius: 4px;
-}
-.tablet-screen {
-  display: block;
-  width: 14rem;
-  height: 9rem;
-  background: #000;
-  margin: 5px auto;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 main {
   flex: 1 0 auto;
 }
-
 .work-section {
   display: flex;
-  /* height: 100vh; */
+  height: 60vw;
+  margin: 8rem auto;
   color: whitesmoke;
-}
-
-.pics {
-  width: 80%;
-  height: 70%;
-  margin: 4rem auto;
 }
 img {
   position: relative;
-  display: inline;
-  width: 58rem;
-  height: 45rem;
+  width: 80vw;
+  height: 55vw;
   margin: 2rem auto;
 }
 
 .swiper-container {
-  height: 50rem;
-  margin-top: 5rem;
+  height: 60vw;
+  margin: 0 auto;
+ 
 }
 .swiper-slide {
   display: flex;
@@ -177,20 +113,19 @@ img {
 }
 .techno-section {
   margin: 13rem auto;
-  height: 60vh;
 }
 .techs-heading {
   margin-left: 5rem;
   font-family: sans-serif;
   color: antiquewhite;
-  font-size: 5em;
+  font-size: 3vw;
   margin-bottom: 0;
 }
 .icons-box {
   height: 60vh;
-  /* width: 75%; */
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
@@ -202,20 +137,121 @@ img {
   height: 4em;
 }
 .trio {
-  width: 12em;
+  width: 10em;
   height: 5em;
   background-color: white;
   border-radius: 5px;
 }
-
 footer ul{
-  width: 30%;
-  margin: 2rem auto;
-  text-align: center;
+  padding: 0;
+  width: 6vw;
+  margin: 0 auto;
 }
 .fab {
   font-size: 2rem;
 }
 .fab:hover {
   color: #19b5fe;
+}
+
+
+@media screen and (max-width: 840px) {
+
+  nav {
+    display: flex;
+    height: 10vh;
+    padding: .5rem;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav-ul li {
+    flex-grow: 1;
+    margin: 0 1.5rem;
+  }
+
+  .logo {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 10px;
+    font-size: 1rem;
+    left: 1.2rem;
+  }
+  .devices {
+    width: 2vw
+  }
+}
+
+@media screen and ( min-width: 622px){
+
+  .techs-heading {
+    font-size: 3em;
+  }
+  footer {
+    margin: 1rem 1rem 2rem;
+  }
+
+  footer ul {
+    display: flex;
+    padding: 0;
+    width: 50%;
+  }
+  footer ul li {
+    gap: 5px;
+  }
+}
+
+@media screen and ( max-width: 432px){
+
+   nav {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10rem;
+   }
+    nav ul {
+      padding: 0;
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .nav-ul li {
+      width: 100%;
+      line-height: 30px;
+      border: 1px solid white;
+      text-align: center;
+      border-radius: 3px;
+    }
+    
+    .devices-box {
+      display: none;
+    }
+    .techno-section {
+      margin: 13rem auto;
+    }
+    .techs-heading {
+      font-size: 3em;
+    }
+    fotter {
+      margin-top: 10rem;
+    }
+    footer ul {
+      padding: 0;
+      width: 95%;
+    }
+    .fab:hover {
+      color: #19b5fe;
+    }
+}
+
+@media screen and ( max-width: 360px){
+  footer {
+    margin-top: 10rem;
+  }
 }

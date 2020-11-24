@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"> -->
   <link rel="stylesheet" type="text/css" href="./devicon-master/devicon-colors.css">
   <title>Portfolio</title>
 </head>
@@ -21,30 +20,23 @@
       <ul class="nav-ul">
         <!-- <li><a href="#about">About Me</a></li> -->
         <li><a href="#work">Work</a></li>
-        <li><a href="">Techonologies</a></li>
-        <li><a href="">Contact Me</a></li>
+        <li><a href="#techs">Techonologies</a></li>
+        <li><a href="#contact">Contact Me</a></li>
       </ul>
     </nav>
+
       <div class="hero">
         <h2 class="hero-heading">Web Development work</h2>
         <p>Web Apps for Desktop Tablet and Mobile Devices</p>
         <div class="devices-box">
-          <div class="device cellphone">
-            <span class="screen"></span>
-          </div>
-          <div class="device desktop">
-            <span class="pc-screen"></span>
-          </div>
-          <div class="device tablet">
-            <span class="tablet-screen"></span>
-          </div>
+          <img src="images/devices.png" alt="devices" class="screens">
         </div>
       </div>
       
     <main>
 
       <section class="work-section" id="work">
-          
+         
             <!-- Slider main container -->
           <div class="swiper-container">
             <!-- Additional required wrapper -->
@@ -68,7 +60,7 @@
      
        </section>
 
-       <section class="techno-section" id="technologies">
+       <section class="techno-section" id="techs">
          <h2 class="techs-heading">Technologies</h2>
         <div class="icons-box">
           <img src="images/php.png"class="techs" alt="php">
@@ -76,28 +68,12 @@
           <img src="images/reactjs.png" alt="reactjs" class="techs">
           <img src="images/mysql.png" alt="mysql" class="techs">
           <img src="images/git.png" alt="git" class="techs">
-          <!-- <div class="svgs php"></div>
-          <div class="svgs html"></div>
-          <div class="svgs css3"></div>
-          <div class="svgs js"></div>
-          <div class="svgs git"></div>
-          <div class="svgs sass"></div>
-          <div class="svgs clang"></div>
-          <div class="svgs sass"></div>
-          <div class="svgs react"></div>
-          <div class="svgs sass"></div>
-          <div class="svgs mongo"></div>
-          <div class="svgs webpack"></div> -->
          </div>
        </section>
 
-      <section id="contact"></section>
-
     </main>
 
-    
-
-    <footer>
+    <footer id="contact">
       <ul>
         <li>
           <a href="">
@@ -105,11 +81,11 @@
           </a>
         </li>
         <li>
-        <li>
           <a href="">
-          <i class="fab fa-linkedin"></i>
+            <i class="fab fa-linkedin"></i>
           </a>
         </li>
+        <li>
           <a href="">
             <i class="fab fa-facebook-square"></i>
           </a>
@@ -143,31 +119,31 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script> var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    autoplay : {
-      delay:2500,
-      disableOnInteraction: false
-    },
-    loop: true,
+      // Optional parameters
+      autoplay : {
+        delay:2500,
+        disableOnInteraction: false
+      },
+      loop: true,
 
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
-</script>
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      })
+  </script>
 
 
 </body>
